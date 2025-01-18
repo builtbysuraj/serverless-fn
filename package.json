@@ -1,10 +1,11 @@
 {
   "name": "serverless-fn",
   "version": "1.0.0",
-  "main": "index.js",
+   "main": "api/index.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "vercel dev"
   },
   "keywords": [],
   "author": "",
