@@ -1,3 +1,5 @@
 import app from '../server.js'
 
-export default app
+export default async (req, res) => {
+  app(req, res) // Delegate all requests to your Express app
+}
