@@ -1,5 +1,5 @@
-const express = require('express')
-const cors = require('cors')
+import cors from 'cors'
+import express from 'express'
 
 const app = express()
 app.use(cors())
@@ -8,4 +8,4 @@ app.get('/', (req, res) => {
   res.send('Hello from Express on Vercel!')
 })
 
-module.exports = app
+export default app
