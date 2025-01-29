@@ -1,5 +1,11 @@
-import app from '../server.js'
+const express = require('express')
+const cors = require('cors')
 
-export default async (req, res) => {
-  app(req, res) // Delegate all requests to your Express app
-}
+const app = express()
+app.use(cors())
+
+app.get('/', (req, res) => {
+  res.send('Hello from Express on Vercel!')
+})
+
+module.exports = app
